@@ -1,0 +1,21 @@
+---
+title: "Best ice cream in Vienna, Austria"
+author: ""
+date: "23 11 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+library(leaflet)
+
+myMap <- leaflet() %>% 
+         addTiles() %>%
+         addMarkers(lat = 48.20186253092566, lng=16.35477769998564, popup = "Gelateria La Romana")
+myMap
+
+```
